@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>to do list</title>
+  </head>
+  <body>
+    <!-- pin 이미지 -->
+    <h1><img src="./pin.png" /></h1>
+
+    <!-- 투두리스트 -->
+    <main>
+      <!-- 제목, 날짜 -->
+      <article>
+        <h2>To Do List</h2>
+        <h2 id="current-date"></h2>
+      </article>
+
+      <!-- 할 일 입력하기, 저장 버튼 -->
+      <form>
+        <input type="text" placeholder="할 일 추가하기" />
+        <button type="submit">저장</button>
+      </form>
+
+      <!-- 입력한 list 보여주기 -->
+      <ul></ul>
+
+      <!-- 전체 삭제 -->
+      <div class="btn-clear">
+        <button type="button" class="clear">전체 삭제</button>
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="./date.js"></script>
+  </body>
+</html>
