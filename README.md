@@ -1,7 +1,7 @@
 # 자바스크립트 To Do List 만들기
 <br>
 <p align="center">
-  <img src="https://github.com/hyeonbinnn/to-do-list/assets/117449788/6bcadebb-e204-4b66-96f0-9e1e042cff5b" width="800">
+  <img src="https://github.com/hyeonbinnn/to-do-list/assets/117449788/3df15d96-2aa8-424e-bdfa-cfe6acf7477e" width="700">
 </p>
 
 <br>
@@ -25,9 +25,9 @@
 
 ## 구현 기능
 
-- preventDefault() 메서드를 통해 새로고침 안되게 하기
+- `preventDefault()` 메서드를 통해 새로고침 안되게 하기
 - 개별 삭제 버튼 추가 (저장된 데이터 업데이트)
 - localStorage에 정보 저장
-- localStorage.clear를 통해 전체 삭제 버튼 추가
+- `localStorage.clear`를 통해 전체 삭제 버튼 추가
 - 완료된 리스트 체크박스로 줄 긋기
-- Date() 오늘 날짜 가져오기
+- `Date()` 오늘 날짜 가져오기
