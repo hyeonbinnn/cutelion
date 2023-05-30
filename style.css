@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'KIMM_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'KIMM_Bold', sans-serif;
+}
+
+body {
+  margin: 80px 100px;
+  background-color: #c8d7be;
+}
+
+main {
+  padding: 60px 70px;
+  background-color: #fffade;
+  box-shadow: 5px 5px #9daa99;
+  border-radius: 10px;
+}
+
+/* pin 이미지 삽입 */
+h1 {
+  text-align: right;
+}
+
+h1 img {
+  width: 50px;
+  margin-bottom: -25px;
+  margin-right: 50px;
+}
+
+/* 투두리스트 제목, 오늘 날짜 */
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 48px;
+  color: #615f4e;
+}
+
+#current-date {
+  margin-top: 28px;
+  font-size: 17px;
+}
+
+/* 할 일 추가하기, 저장 버튼 */
+form {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+}
+
+input,
+button {
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  outline: none;
+  border: 2px solid #a5a38c;
+}
+
+button {
+  width: 80px;
+  height: 42px;
+  background-color: #615f4e;
+  color: white;
+  border: transparent;
+}
+
+button:hover {
+  background-color: #9daa99;
+  color: #000000;
+}
+
+/* 전체 삭제 버튼 */
+.btn-clear {
+  text-align: right;
+}
+
+.btn-clear .clear {
+  width: 100px;
+  background-color: #615f4e;
+  color: white;
+}
+
+.btn-clear .clear:hover {
+  width: 100px;
+  background-color: #9daa99;
+  color: #000000;
+}
+
+/* 저장한 리스트, 삭제 버튼, 체크 버튼 */
+ul {
+  list-style: none;
+  margin: 20px 5px;
+}
+
+li {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  border-bottom: 1px dotted #615f4e;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+li span {
+  position: relative;
+  top: 13px;
+}
+
+li button {
+  width: 40px;
+  float: right;
+}
+
+li .btn-x {
+  margin-right: 10px;
+  background-color: #9daa99;
+  color: black;
+}
+
+li .btn-x:hover {
+  background-color: #615f4e;
+  color: white;
+}
+
+li .btn-check {
+  background-color: #9daa99;
+  color: black;
+  font-weight: bold;
+}
+
+li .btn-check:hover {
+  background-color: #615f4e;
+  color: white;
+}
+
+/* 투두리스트 완료시 줄 긋기 */
+ul li.complete {
+  text-decoration: line-through;
+  color: rgb(161, 178, 167);
+}
