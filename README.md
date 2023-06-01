@@ -27,7 +27,7 @@
 
 - `preventDefault()` 메서드를 통해 새로고침 안되게 하기
 - 개별 삭제 버튼 추가 (저장된 데이터 업데이트)
-- localStorage에 정보 저장
+- `localStorage`에 정보 저장
 - `localStorage.clear`를 통해 전체 삭제 버튼 추가
 - 완료된 리스트 체크박스로 줄 긋기
 - `Date()` 오늘 날짜 가져오기
