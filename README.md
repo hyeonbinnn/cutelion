@@ -35,6 +35,9 @@
 - `Date()` 오늘 날짜 가져오기
 - 완료된 리스트 체크박스 클릭 시 줄 긋기
 
+<br>
+<br>
+
 ## 코드 설명
 
 ### 변수 선언
@@ -50,6 +53,9 @@ let todos = [];
 - `form, input, ul, clear`는 HTML 요소를 선택하기 위한 변수들이다.
 - `todos`는 할 일 목록을 저장하는 배열이다.
 
+<br>
+<br>
+
 ### saveTodo 함수
 
 ```js
@@ -60,7 +66,12 @@ const saveTodo = () => {
 
 - `todos` 배열을 로컬 스토리지에 저장하는 함수다.
 - `localStorage.setItem('todos', JSON.stringify(todos))`를 호출해, `todos` 배열을 JSON 형식으로 변환하여 로컬 스토리지에 저장한다.
-  ![](https://velog.velcdn.com/images/hyeonbinnn/post/ac41e048-7a6b-4870-9cfa-4ecc34986aa4/image.png)
+<br>
+
+![](https://velog.velcdn.com/images/hyeonbinnn/post/ac41e048-7a6b-4870-9cfa-4ecc34986aa4/image.png)
+
+<br>
+<br>
 
 ### delTodo 함수
 
@@ -77,7 +88,12 @@ const delTodo = (event) => {
 - 할 일 목록을 삭제하는 함수다.
 - 클릭한 버튼의 부모 요소인 `li`를 찾아서 문서에서 삭제한다.
 - `todos` 배열에서 해당 `id` 값을 가진 요소를 찾아서 삭제한 후, 변경된 `todos` 배열을 다시 저장한다.
-  ![](https://velog.velcdn.com/images/hyeonbinnn/post/029c1bfd-e5f1-4426-8eff-cc6a445ee341/image.gif)
+<br>
+
+![](https://velog.velcdn.com/images/hyeonbinnn/post/029c1bfd-e5f1-4426-8eff-cc6a445ee341/image.gif)
+
+<br>
+<br>
 
 ### allClear 함수
 
@@ -91,7 +107,12 @@ const allClear = () => {
 - 모든 할 일 목록을 삭제하는 함수다.
 - `localStorage.clear('todos', JSON.stringify(todos))`를 호출해 로컬 스토리지의 `todos` 데이터를 삭제한다.
 - `ul.innerHTML`을 빈 문자열로 설정해 할 일 목록을 비운다.
-  ![](https://velog.velcdn.com/images/hyeonbinnn/post/1ba1e4f3-dad8-4f3a-a00e-3d5d1f0c85ec/image.gif)
+<br>
+
+![](https://velog.velcdn.com/images/hyeonbinnn/post/1ba1e4f3-dad8-4f3a-a00e-3d5d1f0c85ec/image.gif)
+
+<br>
+<br>
 
 ### addTodo 함수
 
@@ -136,7 +157,12 @@ const addTodo = (todo) => {
 - 버튼의 클릭 이벤트와 완료 상태 변경을 처리하는 함수를 등록한다.
 - 생성한 리스트 요소의 `id` 값을 `todo` 객체의 `id` 값으로 지정한다.
 - 완료된 항목인 경우 `li` 요소에 `complete` 클래스를 추가해 완료 상태를 시각적으로 표시한다.
-  ![](https://velog.velcdn.com/images/hyeonbinnn/post/7e12b1c4-63f4-4b07-8ae5-e52993ece657/image.png)
+<br>
+
+![](https://velog.velcdn.com/images/hyeonbinnn/post/7e12b1c4-63f4-4b07-8ae5-e52993ece657/image.png)
+
+<br>
+<br>
 
 ### handleSubmit 함수
 
@@ -163,6 +189,9 @@ const handleSubmit = (event) => {
 - `saveTodo` 함수를 호출해 변경된 `todos` 배열을 저장한다.
 - 입력 창을 공백으로 초기화한다.
 
+<br>
+<br>
+
 ### init 함수
 
 ```js
@@ -184,6 +213,9 @@ const init = () => {
 - 가져온 데이터는 JSON 형식으로 저장되어 있으므로 `JSON.parse`를 사용하여 파싱한 후 `userTodos` 변수에 저장한다.
 - 만약 `userTodos`가 존재한다면, 각 `todo` 객체에 대해 `addTodo` 함수를 호출해 화면에 할 일을 추가한다.
 - `todos` 배열을, 가져온 `userTodos`로 초기화한다.
+
+<br>
+<br>
 
 ### 이벤트 처리와 초기화
 
